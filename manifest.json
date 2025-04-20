@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Page Snapshot Comparator",
+  "version": "1.0",
+  "description": "Save and compare webpage snapshots",
+  "permissions": ["scripting", "storage", "tabs", "activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Compare Page"
+  },
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
